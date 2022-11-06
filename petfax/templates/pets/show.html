@@ -11,11 +11,11 @@
     <div class="container">
         <h1>{{ pet.pet_name }}</h1>
         <div class="callout">
-            <span style="font-weight: 800">Did you know?</span></br>{{ pet.pet_fact}}
+            <span style="font-weight: 800">Did you know?</span><br/>{{ pet.pet_fact}}
         </div>
         <div class="pets-container">
             <div class="show-pet">
-                <img src="{{ url_for('static', filename='/assets/') }}{{ pet.pet_photo }}"/>
+                <img src="{{ url_for('static', filename='assets/') }}{{ pet.pet_photo }}"/>
             </div>
         </div>
         <a href="/pets">⟨　Go back</a>
