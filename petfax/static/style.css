@@ -7,12 +7,10 @@
     --body-font: 'ABeeZee', helvetica;
     /* colors */ 
     --light-accent: #e7b4fc; 
-    --main-accent: #7a084e;
+    --main-accent: #b70171;
     --second-accent: #543392;       
 }
 
-/* #51060b     #4c5746 */
- 
 /* GENERAL */
 body {
     background: var(--light-accent);
@@ -83,6 +81,7 @@ input, textarea {
 }
 textarea {
     resize: vertical;
+    color: rgb(230, 223, 247);
 }
 input:focus, textarea:focus {
     outline: none;

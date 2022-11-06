@@ -1,4 +1,5 @@
 from flask import Flask 
+from flask import render_template
 
 #factory
 def create_app(): 
@@ -7,7 +8,7 @@ def create_app():
     # index route
     @app.route('/')
     def index(): 
-        return '<h1>Hello, this is PetFax!</h1>'
+         return render_template('pets/index.html')
 
     #register the pet blueprint
     from . import pet
