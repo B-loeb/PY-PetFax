@@ -92,7 +92,7 @@ input[type="submit"] {
     border: none;
     background: var(--second-accent);
     font-family: var(--header-font);
-    font-size: 1em;
+    font-size: 2em;
     letter-spacing: 1px;
     color: whitesmoke;
     padding: 0.5em;
