@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>New PetFax Fact Submissions</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Facts</h1>
+        <div class="callout">
+            Please submit unique animal facts and we will share them once verified!
+        </div>
+        <div class="facts-container">
+            <form action="/facts" method="POST">
+                <label for="author"><h2>Name:</h2></label>
+                <input name="author" type="text">
+                <br/>
+                <label for="fact"><h2>Fact:</h2></label>
+                <textarea name="fact"></textarea>
+                <br/>
+                <input type="submit" value="Submit the Fact">
+            </form>
+        </div>
+        <a href="/pets">( Go back</a>
+    </div>
+</body>
+</html>
