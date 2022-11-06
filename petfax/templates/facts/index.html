@@ -9,7 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>User Facts</h1>
+        <H1>UserFax</H1>
+        {% for fact in facts %}
+            <H4>Submitted by {{ fact.author }}</H4>
+            {{ fact.fact }}
+        {% endfor %}
     </div>
 </body>
+
 </html>
